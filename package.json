@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-sub2ind",
-  "version": "0.0.8",
+  "version": "0.0.0",
   "description": "Convert subscripts to a linear index.",
   "license": "Apache-2.0",
   "author": {
