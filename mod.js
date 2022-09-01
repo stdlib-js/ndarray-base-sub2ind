@@ -1,0 +1,4 @@
+// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./mod.d.ts" />
+function e(){var e,r=arguments,n=r[0],t="https://stdlib.io/e/"+n+"?";for(e=1;e<r.length;e++)t+="&arg[]="+encodeURIComponent(r[e]);return t}function r(){var r,n,t,a,i,o,s,u,l,f,c,d;for(r=arguments[1],n=arguments[2],t=(o=arguments[3+(i=(a=arguments[0]).length)]).length,u=n,d=0;d<i;d++){if(l=a[d],c=arguments[d+3],"clamp"===(s=o[d%t]))c<0?c=0:c>=l&&(c=l-1);else if("wrap"===s)c<0?(c+=l)<0&&0!==(c%=l)&&(c+=l):c>=l&&(c-=l)>=l&&(c%=l);else if(c<0||c>=l)throw new RangeError(e("invalid argument. Subscripts must not exceed array dimensions. Subscript: `%u`. Value: `%d`.",d,c));(f=r[d])<0&&0===n?u-=c*f:u+=c*f}return u}export{r as default};
+//# sourceMappingURL=mod.js.map
