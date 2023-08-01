@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@stdlib/ndarray-index-modes": "^0.0.8",
-    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2",
     "@stdlib/types": "^0.0.14",
     "@stdlib/utils-library-manifest": "^0.0.8"
   },
