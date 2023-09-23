@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-sub2ind/tags). For example,
+
+```javascript
 import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@v0.1.0-esm/index.mjs';
 ```
 
@@ -203,7 +208,7 @@ import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sh
 import strides2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2offset@esm/index.mjs';
 import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@v0.1.0-esm/index.mjs';
+import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@esm/index.mjs';
 
 var shape = [ 3, 3 ];
 var strides = shape2strides( shape, 'row-major' );
