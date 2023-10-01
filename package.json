@@ -45,14 +45,14 @@
     "@stdlib/utils-library-manifest": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-is-integer": "^0.0.8",
+    "@stdlib/assert-is-integer": "^0.1.0",
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/math-base-special-floor": "^0.0.8",
-    "@stdlib/ndarray-base-numel": "^0.0.8",
-    "@stdlib/ndarray-base-shape2strides": "^0.0.8",
-    "@stdlib/ndarray-base-strides2offset": "^0.0.8",
-    "@stdlib/random-base-discrete-uniform": "^0.0.6",
-    "@stdlib/random-base-randu": "^0.0.8",
+    "@stdlib/math-base-special-floor": "^0.1.0",
+    "@stdlib/ndarray-base-numel": "^0.1.0",
+    "@stdlib/ndarray-base-shape2strides": "^0.1.0",
+    "@stdlib/ndarray-base-strides2offset": "^0.1.0",
+    "@stdlib/random-base-discrete-uniform": "^0.1.0",
+    "@stdlib/random-base-randu": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
