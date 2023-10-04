@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-sub2ind",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert subscripts to a linear index.",
   "license": "Apache-2.0",
   "author": {
@@ -39,10 +39,10 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-index-modes": "^0.1.0",
-    "@stdlib/string-format": "^0.1.0",
+    "@stdlib/ndarray-index-modes": "^0.1.1",
+    "@stdlib/string-format": "^0.1.1",
     "@stdlib/types": "^0.1.0",
-    "@stdlib/utils-library-manifest": "^0.1.0"
+    "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-integer": "^0.1.0",
