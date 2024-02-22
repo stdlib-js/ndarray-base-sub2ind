@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+sub2ind = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-sub2ind/tags). For example,
+
+```javascript
 sub2ind = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@v0.2.1-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var sub2ind = require( 'path/to/vendor/umd/ndarray-base-sub2ind/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -226,7 +231,7 @@ idx = sub2ind( shape, strides, offset, 10, 10, mode );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2offset@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
