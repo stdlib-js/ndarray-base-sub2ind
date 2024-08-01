@@ -42,21 +42,21 @@
     "@stdlib/ndarray-index-modes": "^0.2.2",
     "@stdlib/string-format": "^0.2.2",
     "@stdlib/types": "^0.3.2",
-    "@stdlib/utils-library-manifest": "^0.2.1",
+    "@stdlib/utils-library-manifest": "^0.2.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-integer": "^0.2.1",
-    "@stdlib/math-base-special-floor": "^0.2.2",
-    "@stdlib/ndarray-base-numel": "^0.2.1",
-    "@stdlib/ndarray-base-shape2strides": "^0.2.1",
-    "@stdlib/ndarray-base-strides2offset": "^0.2.1",
+    "@stdlib/assert-is-integer": "^0.2.2",
+    "@stdlib/math-base-special-floor": "^0.2.3",
+    "@stdlib/ndarray-base-numel": "^0.2.2",
+    "@stdlib/ndarray-base-shape2strides": "^0.2.2",
+    "@stdlib/ndarray-base-strides2offset": "^0.2.2",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",
