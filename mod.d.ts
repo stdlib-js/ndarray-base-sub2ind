@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,14 +16,13 @@
 * limitations under the License.
 */
 
-'use strict';
+/* eslint-disable jsdoc/check-param-names */
 
-// MODULES //
+// TypeScript Version: 4.1
 
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-
-// MAIN //
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
 * Converts subscripts to a linear index.
@@ -108,90 +107,27 @@ var format = require( '@stdlib/error-tools-fmtprodmsg' );
 *
 *     In short, from the perspective of a view, view data is always ordered.
 *
-* @param {NonNegativeIntegerArray} shape - array shape
-* @param {IntegerArray} strides - stride array
-* @param {NonNegativeInteger} offset - location of the first indexed value **based** on the stride array
-* @param {...integer} i - subscripts
-* @param {StringArray} mode - specifies how to handle subscripts which exceed array dimensions
-* @throws {RangeError} must provide subscripts which do not exceed array dimensions
-* @returns {NonNegativeInteger} linear index
+*
+* @param shape - array shape
+* @param strides - stride array
+* @param offset - location of the first indexed value **based** on the stride array
+* @param args - subscripts followed by a `mode` specifying how to handle subscripts which exceed array dimensions
+* @param mode - specifies how to handle subscripts which exceed array dimensions
+* @throws must provide subscripts which do not exceed array dimensions
+* @returns linear index
 *
 * @example
 * var shape = [ 3, 3, 3 ];
 * var strides = [ 9, 3, 1 ];
 * var offset = 0;
-* var mode = [ 'throw' ]
+* var mode = [ 'throw' ];
 *
 * var idx = sub2ind( shape, strides, offset, 1, 2, 2, mode );
-* // returns [ 'throw' ]
+* // returns 17
 */
-function sub2ind() {
-	var strides;
-	var offset;
-	var nmodes;
-	var shape;
-	var ndims;
-	var modes;
-	var mode;
-	var idx;
-	var m;
-	var s;
-	var j;
-	var i;
-
-	shape = arguments[ 0 ];
-	strides = arguments[ 1 ];
-	offset = arguments[ 2 ];
-	ndims = shape.length;
-	modes = arguments[ 3+ndims ]; // last argument
-	nmodes = modes.length;
-	idx = offset;
-	for ( i = 0; i < ndims; i++ ) {
-		m = shape[ i ];
-		j = arguments[ i+3 ];
-		mode = modes[ i%nmodes ];
-		if ( mode === 'clamp' ) {
-			if ( j < 0 ) {
-				j = 0;
-			} else if ( j >= m ) {
-				j = m - 1;
-			}
-		} else if ( mode === 'wrap' ) {
-			if ( j < 0 ) {
-				j += m; // slight optimization to avoid modulo arithmetic when |j| <= m
-				if ( j < 0 ) {
-					j %= m;
-					if ( j !== 0 ) {
-						j += m;
-					}
-				}
-			} else if ( j >= m ) {
-				j -= m; // slight optimization to avoid modulo arithmetic when m < j <= 2m
-				if ( j >= m ) {
-					j %= m;
-				}
-			}
-		} else {
-			if ( mode === 'normalize' && j < 0 ) {
-				j += m;
-			}
-			if ( j < 0 || j >= m ) {
-				throw new RangeError( format( '0jX5J', i, j ) );
-			}
-		}
-		s = strides[ i ];
-
-		// Check if array view...
-		if ( s < 0 && offset === 0 ) {
-			idx -= j * s; // increments idx
-		} else {
-			idx += j * s; // may increment or decrement idx
-		}
-	}
-	return idx;
-}
+declare function sub2ind( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, ...args: Array<number | Array<string>> ): number;
 
 
 // EXPORTS //
 
-module.exports = sub2ind;
+export = sub2ind;
