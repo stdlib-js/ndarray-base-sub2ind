@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@deno/mod.js';
+import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@v0.2.3-deno/mod.js';
 ```
 
 #### sub2ind( shape, strides, offset, ...subscripts, mode )
@@ -199,7 +199,7 @@ import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sh
 import strides2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2offset@deno/mod.js';
 import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@deno/mod.js';
+import sub2ind from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-sub2ind@v0.2.3-deno/mod.js';
 
 var shape = [ 3, 3 ];
 var strides = shape2strides( shape, 'row-major' );
